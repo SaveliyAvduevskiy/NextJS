@@ -9,10 +9,10 @@ export interface filterChecboxProps {
     checked?: boolean;
 }
 
-export const FilterCheckbox: React.FC<FilterChecboxProps> = ({
+export const FilterCheckbox: React.FC<filterChecboxProps> = ({
     text,
     value,
-    endAdornment,
+    endAndorment,
     onCheckedChange,
     checked,
 }) => {
@@ -31,7 +31,7 @@ export const FilterCheckbox: React.FC<FilterChecboxProps> = ({
             >
                 {text}
             </label>
-            {endAdornment}
+            {endAndorment}
         </div>
     );
 };
